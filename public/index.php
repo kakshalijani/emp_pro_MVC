@@ -219,3 +219,72 @@ switch ($page)
 
         ';
 }
+// CREATE TABLE Employee
+// (
+//     id INT PRIMARY KEY AUTO_INCREMENT,
+
+//     full_name VARCHAR(100) NOT NULL,
+
+//     email VARCHAR(100) NOT NULL UNIQUE,
+
+//     password VARCHAR(255) NOT NULL,
+
+//     mobile VARCHAR(15) NOT NULL,
+
+//     profile_image VARCHAR(255) DEFAULT NULL,
+
+//     role ENUM('admin','employee') NOT NULL DEFAULT 'employee',
+
+//     status ENUM('active','inactive') NOT NULL DEFAULT 'active',
+
+//     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+// );
+
+
+// CREATE TABLE attendance
+// (
+//     id INT PRIMARY KEY AUTO_INCREMENT,
+
+//     employee_id INT NOT NULL,
+
+//     attendance_date DATE NOT NULL,
+
+//     punch_in TIME DEFAULT NULL,
+
+//     punch_out TIME DEFAULT NULL,
+
+//     working_hours VARCHAR(20) DEFAULT NULL,
+
+//     overtime_hours VARCHAR(20) DEFAULT NULL,
+
+//     late_time VARCHAR(20) DEFAULT NULL,
+
+//     status ENUM('Present','Absent','Late') DEFAULT 'Present',
+
+//     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+//     FOREIGN KEY (employee_id)
+//     REFERENCES Employee(id)
+//     ON DELETE CASCADE
+// );
+
+// CREATE TABLE login_activity
+// (
+//     id INT PRIMARY KEY AUTO_INCREMENT,
+
+//     employee_id INT NOT NULL,
+
+//     login_time DATETIME DEFAULT CURRENT_TIMESTAMP,
+
+//     logout_time DATETIME DEFAULT NULL,
+
+//     ip_address VARCHAR(50) DEFAULT NULL,
+
+//     device_info TEXT DEFAULT NULL,
+
+//     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+
+//     FOREIGN KEY (employee_id)
+//     REFERENCES Employee(id)
+//     ON DELETE CASCADE
+// );
